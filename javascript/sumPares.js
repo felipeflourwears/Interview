@@ -13,3 +13,19 @@ Suma total: 12
 {
     let numeros = [1, 2, 3, 4, 5, 6];
 }
+
+
+function sumarPares(numeros) {
+  let suma = 0;
+
+  for (let num of numeros) {
+    if (num % 2 === 0) {
+      console.log(num);
+      suma += num;
+    }
+  }
+
+  console.log("Suma total:", suma);
+}
+
+sumarPares([1, 2, 3, 4, 5, 6]);

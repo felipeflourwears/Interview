@@ -8,4 +8,11 @@ Entrada: "Hello World"
 Salida: "Hll Wrld"
 */
 
-const sentence = "Hello World"
+function sinVocales(cadena) {
+  return cadena.replace(/[aeiouAEIOU]/g, '');
+}
+
+const sentence = sinVocales("Hello World");
+console.log(sentence);
+
+/*console.log("Hello")*/
